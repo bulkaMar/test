@@ -1,0 +1,17 @@
+function init() {
+  import("./header.js");
+  import("./select.js");
+  import("./live-events.js");
+  import("./features.js");
+  import("./faq-accordion.js");
+}
+
+const totalPartials = document.querySelectorAll(
+  '[hx-trigger="load"], [data-hx-trigger="load"]'
+).length;
+let loadedPartialsCount = 0;
+
+document.body.addEventListener("htmx:afterOnLoad", () => {
+  loadedPartialsCount++;
+  if (loadedPartialsCount === totalPartials) init();
+});
