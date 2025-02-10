@@ -1,15 +1,15 @@
-function init() {
-  import("./header.js");
-  import("./select.js");
-  import("./faq-accordion.js");
-}
+// function init() {
+//   import("./header.js");
+//   import("./select.js");
+//   import("./faq-accordion.js");
+// }
 
-const totalPartials = document.querySelectorAll(
-  '[hx-trigger="load"], [data-hx-trigger="load"]'
-).length;
-let loadedPartialsCount = 0;
+// const totalPartials = document.querySelectorAll(
+//   '[hx-trigger="load"], [data-hx-trigger="load"]'
+// ).length;
+// let loadedPartialsCount = 0;
 
-document.body.addEventListener("htmx:afterOnLoad", () => {
-  loadedPartialsCount++;
-  if (loadedPartialsCount === totalPartials) init();
-});
+// document.body.addEventListener("htmx:afterOnLoad", () => {
+//   loadedPartialsCount++;
+//   if (loadedPartialsCount === totalPartials) init();
+// });
