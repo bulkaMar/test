@@ -5,54 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Test</title>
+    <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
   </head>
   <body>
     <header class="header">
       <div class="container">
-        <div class="header-content">
+        <div class="header__content">
           <nav class="header__nav">
             <div class="header__nav-content">
               <div class="header__nav-logo">
                 <a href="index.html" class="header__logo-link">LOGO</a>
               </div>
-              <a href="#" class="header__menu-btn">
+              <button
+                class="header__menu-btn"
+                aria-label="Open navigation menu"
+              >
                 <span class="header__navicon"></span>
-              </a>
+              </button>
               <div class="header__nav-menu">
-                <div class="header__nav-menu-links">
-                  <ul class="header__nav-list">
-                    <li class="header__nav-list-item">
-                      <a href="bonus.html" class="header__nav-link">
-                        <img
-                          src="img/header/bonuses.png"
-                          alt="Gift icon"
-                          class="header__nav-link-img"
-                        />
-                        BONUSES
-                      </a>
-                    </li>
-                    <li class="header__nav-list-item">
-                      <a href="app.html" class="header__nav-link">
-                        <img
-                          src="img/header/app.png"
-                          alt="Phone icon"
-                          class="header__nav-link-img"
-                        />
-                        APP
-                      </a>
-                    </li>
-                    <li class="header__nav-list-item">
-                      <a href="#contacts" class="header__nav-link">LIVE</a>
-                    </li>
-                    <li class="header__nav-list-item">
-                      <a href="#contacts" class="header__nav-link">SPORTS</a>
-                    </li>
-                    <li class="header__nav-list-item">
-                      <a href="#contacts" class="header__nav-link">MORE</a>
-                    </li>
-                  </ul>
-                </div>
+                <ul class="header__nav-links">
+                  <li class="header__nav-list-item">
+                    <a href="bonus.html" class="header__nav-link">
+                      <img
+                        src="img/header/bonuses.png"
+                        alt="Gift icon"
+                        class="header__nav-link-img"
+                      />
+                      BONUSES
+                    </a>
+                  </li>
+                  <li class="header__nav-list-item">
+                    <a href="app.html" class="header__nav-link">
+                      <img
+                        src="img/header/app.png"
+                        alt="Phone icon"
+                        class="header__nav-link-img"
+                      />
+                      APP
+                    </a>
+                  </li>
+                  <li class="header__nav-list-item">
+                    <a href="#contacts" class="header__nav-link">LIVE</a>
+                  </li>
+                  <li class="header__nav-list-item">
+                    <a href="#contacts" class="header__nav-link">SPORTS</a>
+                  </li>
+                  <li class="header__nav-list-item">
+                    <a href="#contacts" class="header__nav-link">MORE</a>
+                  </li>
+                </ul>
               </div>
             </div>
           </nav>
@@ -91,11 +94,13 @@
             <div class="header__contact">
               <button
                 class="header__contact-button header__contact-button--signup"
+                aria-label="Sign up"
               >
                 SIGN UP
               </button>
               <button
                 class="header__contact-button header__contact-button--login"
+                aria-label="Log in"
               >
                 LOG IN
               </button>
@@ -110,15 +115,17 @@
           <div class="container">
             <div class="banner-bonus__content">
               <div class="banner-bonus__info">
-                <div class="banner-bonus__buttons">
-                  <a href="index.html">Home | </a>
-                  <a href="bonus.html"> Bonuses</a>
-                </div>
+                <nav class="banner-bonus__navigation">
+                  <a href="index.html" class="banner-bonus__link">Home |</a>
+                  <a href="bonus.html" class="banner-bonus__link">Bonuses</a>
+                </nav>
                 <h2 class="banner-bonus__headline">
                   Lorem ipsum dolor sit amet, consectetur adipiscing
                 </h2>
                 <button class="banner-bonus__sign-up">Sign Up</button>
-                <p class="banner__rule">18+ T&C apply | Play Responsibly</p>
+                <p class="banner-bonus__rule">
+                  18+ T&C apply | Play Responsibly
+                </p>
               </div>
             </div>
           </div>
@@ -142,12 +149,12 @@
         <section class="info-bonuses">
           <div class="container">
             <div class="info-bonuses__content">
-              <div class="info-bonuses__item">
+              <article class="info-bonuses__item">
                 <div class="info-bonuses__img-wrapper">
                   <img
                     class="info-bonuses__img"
                     src="img/info-bonuses/basketball-racket.png"
-                    alt="basketball racket"
+                    alt="Basketball racket"
                   />
                 </div>
                 <div class="info-bonuses__text">
@@ -159,15 +166,20 @@
                     ultrices donec urna tellus duis ullamcorper consequat. Enim
                     nunc neque tristique adipiscing varius sit tristique.
                   </p>
-                  <button class="info-bonuses__button">Sign up</button>
+                  <button
+                    class="info-bonuses__button"
+                    aria-label="Sign up for basketball bonus"
+                  >
+                    Sign up
+                  </button>
                 </div>
-              </div>
-              <div class="info-bonuses__item">
+              </article>
+              <article class="info-bonuses__item">
                 <div class="info-bonuses__img-wrapper">
                   <img
                     class="info-bonuses__img"
                     src="img/info-bonuses/basketball-ball.png"
-                    alt="basketball ball"
+                    alt="Basketball ball"
                   />
                 </div>
                 <div class="info-bonuses__text">
@@ -179,15 +191,20 @@
                     ultrices donec urna tellus duis ullamcorper consequat. Enim
                     nunc neque tristique adipiscing varius sit tristique.
                   </p>
-                  <button class="info-bonuses__button">Sign up</button>
+                  <button
+                    class="info-bonuses__button"
+                    aria-label="Sign up for basketball ball bonus"
+                  >
+                    Sign up
+                  </button>
                 </div>
-              </div>
-              <div class="info-bonuses__item">
+              </article>
+              <article class="info-bonuses__item">
                 <div class="info-bonuses__img-wrapper">
                   <img
                     class="info-bonuses__img"
                     src="img/info-bonuses/football-helmet.png"
-                    alt="football helmet"
+                    alt="Football helmet"
                   />
                 </div>
                 <div class="info-bonuses__text">
@@ -199,15 +216,20 @@
                     ultrices donec urna tellus duis ullamcorper consequat. Enim
                     nunc neque tristique adipiscing varius sit tristique.
                   </p>
-                  <button class="info-bonuses__button">Sign up</button>
+                  <button
+                    class="info-bonuses__button"
+                    aria-label="Sign up for football helmet bonus"
+                  >
+                    Sign up
+                  </button>
                 </div>
-              </div>
-              <div class="info-bonuses__item">
+              </article>
+              <article class="info-bonuses__item">
                 <div class="info-bonuses__img-wrapper">
                   <img
                     class="info-bonuses__img"
                     src="img/info-bonuses/american-football.png"
-                    alt="american football ball"
+                    alt="American football ball"
                   />
                 </div>
                 <div class="info-bonuses__text">
@@ -219,15 +241,20 @@
                     ultrices donec urna tellus duis ullamcorper consequat. Enim
                     nunc neque tristique adipiscing varius sit tristique.
                   </p>
-                  <button class="info-bonuses__button">Sign up</button>
+                  <button
+                    class="info-bonuses__button"
+                    aria-label="Sign up for American football bonus"
+                  >
+                    Sign up
+                  </button>
                 </div>
-              </div>
-              <div class="info-bonuses__item">
+              </article>
+              <article class="info-bonuses__item">
                 <div class="info-bonuses__img-wrapper">
                   <img
                     class="info-bonuses__img"
                     src="img/info-bonuses/base-ball.png"
-                    alt="base ball"
+                    alt="Baseball"
                   />
                 </div>
                 <div class="info-bonuses__text">
@@ -239,15 +266,20 @@
                     ultrices donec urna tellus duis ullamcorper consequat. Enim
                     nunc neque tristique adipiscing varius sit tristique.
                   </p>
-                  <button class="info-bonuses__button">Sign up</button>
+                  <button
+                    class="info-bonuses__button"
+                    aria-label="Sign up for baseball bonus"
+                  >
+                    Sign up
+                  </button>
                 </div>
-              </div>
-              <div class="info-bonuses__item">
+              </article>
+              <article class="info-bonuses__item">
                 <div class="info-bonuses__img-wrapper">
                   <img
                     class="info-bonuses__img"
                     src="img/info-bonuses/rawlling.png"
-                    alt="rawlling"
+                    alt="Rawlling"
                   />
                 </div>
                 <div class="info-bonuses__text">
@@ -259,17 +291,22 @@
                     ultrices donec urna tellus duis ullamcorper consequat. Enim
                     nunc neque tristique adipiscing varius sit tristique.
                   </p>
-                  <button class="info-bonuses__button">Sign up</button>
+                  <button
+                    class="info-bonuses__button"
+                    aria-label="Sign up for rawlling bonus"
+                  >
+                    Sign up
+                  </button>
                 </div>
-              </div>
+              </article>
             </div>
           </div>
         </section>
         <section class="sports-betting-guide">
           <div class="container">
             <div class="sports-betting-guide__content">
-              <div class="sports-betting-guide__block-text">
-                <p class="sports-betting-guide__title">SPORTSBOOK REVIEW</p>
+              <section class="sports-betting-guide__block">
+                <h2 class="sports-betting-guide__title">SPORTSBOOK REVIEW</h2>
                 <p class="sports-betting-guide__description">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Consequat egestas eget purus, in dapibus imperdiet quis eget.
@@ -288,9 +325,11 @@
                   pharetra, suspendisse. Turpis ut odio lorem sapien congue.
                   Pulvinar id in mollis faucibus ut. Magna in neque tristi
                 </p>
-              </div>
-              <div class="sports-betting-guide__block-text">
-                <p class="sports-betting-guide__title">LINEUP OF THE SPORTS</p>
+              </section>
+              <section class="sports-betting-guide__block">
+                <h2 class="sports-betting-guide__title">
+                  LINEUP OF THE SPORTS
+                </h2>
                 <p class="sports-betting-guide__description">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Consequat egestas eget purus, in dapibus imperdiet quis eget.
@@ -300,9 +339,9 @@
                   pharetra, suspendisse. Turpis ut odio lorem sapien congue.
                   Pulvinar id in mollis faucibus ut. Magna in neque tristi
                 </p>
-              </div>
-              <div class="sports-betting-guide__block-text">
-                <p class="sports-betting-guide__title">BETTING TYPES</p>
+              </section>
+              <section class="sports-betting-guide__block">
+                <h2 class="sports-betting-guide__title">BETTING TYPES</h2>
                 <p class="sports-betting-guide__description">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Consequat egestas eget purus, in dapibus imperdiet quis eget.
@@ -312,24 +351,24 @@
                   pharetra, suspendisse. Turpis ut odio lorem sapien congue.
                   Pulvinar id in mollis faucibus ut. Magna in neque tristi
                 </p>
-              </div>
-              <div class="sports-betting-guide__block-text">
-                <p class="sports-betting-guide__title">LIVE BETTING</p>
+              </section>
+              <section class="sports-betting-guide__block">
+                <h2 class="sports-betting-guide__title">LIVE BETTING</h2>
                 <ul
                   class="sports-betting-guide__list sports-betting-guide__list--unordered"
                 >
                   <li class="sports-betting-guide__item">
-                    <span>-</span>
+                    <span class="sports-betting-guide__list">-</span>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Consequat egestas eget purus, in dapibus imperdiet quis
                     eget.
                   </li>
                   <li class="sports-betting-guide__item">
-                    <span>-</span>
+                    <span class="sports-betting-guide__list">-</span>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   </li>
                   <li class="sports-betting-guide__item">
-                    <span>-</span>
+                    <span class="sports-betting-guide__list">-</span>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Consequat egestas eget purus.
                   </li>
@@ -338,17 +377,17 @@
                   class="sports-betting-guide__list sports-betting-guide__list--ordered"
                 >
                   <li class="sports-betting-guide__item">
-                    <span class="sports-betting-guide__span">1</span>
+                    <span class="sports-betting-guide__list-number">1</span>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Consequat egestas eget purus, in dapibus imperdiet quis
                     eget.
                   </li>
                   <li class="sports-betting-guide__item">
-                    <span class="sports-betting-guide__span">2</span>
+                    <span class="sports-betting-guide__list-number">2</span>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   </li>
                   <li class="sports-betting-guide__item">
-                    <span class="sports-betting-guide__span">3</span>
+                    <span class="sports-betting-guide__list-number">3</span>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Consequat egestas eget purus.
                   </li>
@@ -362,8 +401,12 @@
                   pharetra, suspendisse. Turpis ut odio lorem sapien congue.
                   Pulvinar id in mollis faucibus ut. Magna in neque tristi
                 </p>
-              </div>
-              <button class="sports-betting-guide__button">Sign UP</button>
+              </section>
+              <button
+                class="sports-betting-guide__button sports-betting-guide__button--signup"
+              >
+                Sign UP
+              </button>
             </div>
           </div>
         </section>
@@ -372,7 +415,11 @@
             <div class="faq__content">
               <h2 class="faq__title">FAQ</h2>
               <div class="faq__item">
-                <button class="faq__question" aria-expanded="false">
+                <button
+                  class="faq__question"
+                  aria-expanded="false"
+                  aria-controls="answer1"
+                >
                   Question 1
                   <img
                     src="img/faq/arrow-up.png"
@@ -380,7 +427,7 @@
                     class="faq__icon"
                   />
                 </button>
-                <div class="faq__answer">
+                <section id="answer1" class="faq__answer">
                   <p>
                     This is Photoshop's version of Lorem Ipsum. Proin gravida
                     nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
@@ -390,10 +437,14 @@
                     velit. Nam nec tellus a odio tincidunt auctor a ornare odio.
                     Sed non mauris vitae erat consequat auctor eu in elit.
                   </p>
-                </div>
+                </section>
               </div>
               <div class="faq__item">
-                <button class="faq__question" aria-expanded="false">
+                <button
+                  class="faq__question"
+                  aria-expanded="false"
+                  aria-controls="answer2"
+                >
                   Question 2
                   <img
                     src="img/faq/arrow-up.png"
@@ -401,7 +452,7 @@
                     class="faq__icon"
                   />
                 </button>
-                <div class="faq__answer">
+                <section id="answer2" class="faq__answer">
                   <p>
                     This is Photoshop's version of Lorem Ipsum. Proin gravida
                     nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
@@ -411,10 +462,14 @@
                     velit. Nam nec tellus a odio tincidunt auctor a ornare odio.
                     Sed non mauris vitae erat consequat auctor eu in elit.
                   </p>
-                </div>
+                </section>
               </div>
               <div class="faq__item">
-                <button class="faq__question" aria-expanded="false">
+                <button
+                  class="faq__question"
+                  aria-expanded="false"
+                  aria-controls="answer3"
+                >
                   Question 3
                   <img
                     src="img/faq/arrow-up.png"
@@ -422,7 +477,7 @@
                     class="faq__icon"
                   />
                 </button>
-                <div class="faq__answer">
+                <section id="answer3" class="faq__answer">
                   <p>
                     This is Photoshop's version of Lorem Ipsum. Proin gravida
                     nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
@@ -432,7 +487,7 @@
                     velit. Nam nec tellus a odio tincidunt auctor a ornare odio.
                     Sed non mauris vitae erat consequat auctor eu in elit.
                   </p>
-                </div>
+                </section>
               </div>
             </div>
           </div>
@@ -443,7 +498,7 @@
       <div class="container">
         <div class="footer__content">
           <div class="footer__text">
-            <p class="footer__parapraph">
+            <p class="footer__paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat
               egestas eget purus, in dapibus imperdiet quis eget. Curabitur
               semper volutpat cras elementum. Eget ultrices donec urna tellus
@@ -455,20 +510,20 @@
             <img
               class="footer__limitation"
               src="img/footer/limitation.png"
-              alt="18+ icon"
+              alt="18+ age restriction"
             />
           </div>
-          <p class="footer__additon-text">
+          <p class="footer__addition-text">
             Gambling can be addictive. Play responsibly.
           </p>
-          <div class="footer__logo-container">
+          <nav class="footer__logo-container">
             <div class="footer__main-logo">
               <a href="index.html" class="footer__main-link">LOGO</a>
             </div>
             <div class="footer__secondary-logo">
               <a href="index.html" class="footer__secondary-link">LOGO</a>
             </div>
-          </div>
+          </nav>
         </div>
       </div>
     </footer>
