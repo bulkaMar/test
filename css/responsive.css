@@ -13,15 +13,17 @@
   }
 }
 /* ---header--- */
+@media (min-width: 480px) {
+  .header__contact {
+    padding: 0px;
+  }
+}
 @media (min-width: 1024px) {
   .header {
     padding: 10px;
   }
   .header__content {
     justify-content: center;
-  }
-  .header__nav {
-    padding: 16px 0px;
   }
   .header__nav-content {
     align-items: baseline;
@@ -65,7 +67,7 @@
     display: none;
   }
   .header__toolbar {
-    padding: 0px 0px 20px 0px;
+    padding: 0px;
   }
 }
 @media (min-width: 1200px) {
@@ -73,9 +75,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .header__toolbar {
-    padding: 0px 0px 20px 10px;
   }
   .header__nav-links {
     display: flex;
@@ -178,8 +177,8 @@
 }
 /* ---info-about-app--- */
 @media (min-width: 1250px) {
-  .info-about-app__container {
-    padding: 20px 0px;
+  .info-about-app {
+    margin: 20px 0px;
   }
 }
 /* ---banner--- */
@@ -201,7 +200,7 @@
 }
 @media (min-width: 1250px) {
   .banner {
-    padding: 20px 0px;
+    margin: 20px 0px;
   }
 }
 /* ---features--- */
@@ -255,7 +254,7 @@
 }
 @media (min-width: 1250px) {
   .get-bonus {
-    padding: 20px 0px;
+    margin: 20px 0px;
   }
 }
 /* ---bonus-info--- */
@@ -267,7 +266,7 @@
 }
 @media (min-width: 1250px) {
   .bonus-info {
-    padding: 20px 0px;
+    margin: 20px 0px;
   }
 }
 /* ---reviews--- */
@@ -296,7 +295,7 @@
 }
 @media (min-width: 1250px) {
   .reviews {
-    padding: 20px 0px;
+    margin: 20px 0px;
   }
   .reviews__name {
     margin-right: 239px;
@@ -316,7 +315,7 @@
 }
 @media (min-width: 1250px) {
   .quick-facts {
-    padding: 20px 0px;
+    margin: 20px 0px;
   }
 }
 /* ---sports-betting--- */
@@ -328,7 +327,7 @@
 }
 @media (min-width: 1250px) {
   .sports-betting-guide {
-    padding: 20px 0px;
+    margin: 20px 0px;
   }
 }
 /* ---testimonials--- */
@@ -348,7 +347,7 @@
 }
 @media (min-width: 1250px) {
   .testimonials {
-    padding: 20px 0px;
+    margin: 20px 0px;
   }
 }
 /* ---customer-support--- */
@@ -385,7 +384,7 @@
 }
 @media (min-width: 1250px) {
   .customer-support {
-    padding: 20px 0px;
+    margin: 20px 0px;
   }
 }
 /* ---faq--- */
@@ -397,7 +396,7 @@
 }
 @media (min-width: 1250px) {
   .faq {
-    padding: 20px 0px;
+    margin: 20px 0px;
   }
 }
 /* ---footer--- */
@@ -436,7 +435,7 @@
 @media (min-width: 1250px) {
   .banner-app,
   .banner-bonus {
-    padding: 20px 0px;
+    margin: 20px 0px;
   }
 }
 /* ---welcome--- */
@@ -448,7 +447,7 @@
 }
 @media (min-width: 1250px) {
   .welcome {
-    padding: 20px 0px;
+    margin: 20px 0px;
   }
 }
 /* ---info-bonuses--- */
@@ -483,18 +482,18 @@
 }
 @media (min-width: 1250px) {
   .info-bonuses {
-    padding: 20px 0px;
+    margin: 20px 0px;
   }
 }
 /* ---download--- */
 @media (min-width: 800px) {
-  .download__content {
+  .download {
     flex-direction: row;
     height: 170px;
   }
 }
 @media (min-width: 1250px) {
   .download {
-    padding: 20px 0px;
+    margin: 20px 0px;
   }
 }

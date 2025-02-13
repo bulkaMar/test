@@ -200,7 +200,7 @@ body {
 .header__contact {
   display: flex;
   gap: 10px;
-  padding-top: 20px;
+  padding: 20px 0px 0px 0px;
 }
 .header__contact-button {
   cursor: pointer;
@@ -389,7 +389,6 @@ body {
   background-color: rgba(25, 42, 50, 1);
   color: #fff;
 }
-
 /* ---casino--- */
 .sidebar__casino.casino {
   background-color: #fff;
@@ -477,9 +476,7 @@ body {
   padding: 20px;
 }
 .casino__game {
-  background-color: var(--background-block);
-  border-radius: 8px;
-  overflow: hidden;
+  display: contents;
 }
 .casino__game-image {
   height: 110px;
@@ -488,10 +485,8 @@ body {
   border-radius: 6px;
 }
 /* ---info-about-app--- */
-.info-about-app__container {
-  padding: 20px;
-}
-.info-about-app__content {
+.info-about-app{
+  margin: 20px;
   display: flex;
   justify-content: space-between;
   gap: 10px;
@@ -533,19 +528,14 @@ body {
 }
 /* ---banner--- */
 .banner {
-  padding: 20px;
-}
-.banner__content {
+  margin: 20px;
   background: url(/img/section_banner/section-banner_player.png);
   border-radius: 6px;
   -o-object-fit: contain;
   object-fit: contain;
-  width: 100%;
   height: 384px;
   background-size: cover;
   background-position: center;
-}
-.banner__info {
   padding: 15px 20px;
 }
 .banner__rating {
@@ -694,19 +684,14 @@ body {
 }
 /* --get-bonus--- */
 .get-bonus {
-  padding: 20px;
-}
-.get-bonus__content {
+  margin: 20px;
   background: url(/img/get-bonus/get-bonus-back.png);
   border-radius: 6px;
   -o-object-fit: contain;
   object-fit: contain;
-  width: 100%;
   height: 384px;
   background-size: cover;
   background-position: center;
-}
-.get-bonus__info {
   padding: 30px 20px;
 }
 .get-bonus__text {
@@ -745,9 +730,7 @@ body {
 }
 /* ---bonus-info-- */
 .bonus-info {
-  padding: 20px;
-}
-.bonus-info__content {
+  margin: 20px;
   padding: 25px 20px;
   background-color: var(--background-block);
   border-radius: 6px;
@@ -773,9 +756,7 @@ body {
 }
 /* ---reviews--- */
 .reviews {
-  padding: 20px;
-}
-.reviews__content {
+  margin: 20px;
   background-color: var(--background-block);
   border-radius: 6px;
   padding: 25px 20px;
@@ -815,9 +796,7 @@ body {
 }
 /* ---quick-facts--- */
 .quick-facts {
-  padding: 20px;
-}
-.quick-facts__content {
+  margin: 20px;
   padding: 32px 20px;
   background-color: var(--background-block);
   border-radius: 6px;
@@ -872,9 +851,7 @@ body {
 }
 /* ---sports-betting--- */
 .sports-betting-guide {
-  padding: 20px;
-}
-.sports-betting-guide__content {
+  margin: 20px;
   background-color: var(--background-block);
   border-radius: 6px;
   padding: 32px 20px;
@@ -938,9 +915,7 @@ body {
 }
 /* ---testimonials--- */
 .testimonials {
-  padding: 20px;
-}
-.testimonials__content {
+  margin: 20px;
   background-color: var(--background-block);
   border-radius: 6px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -1042,9 +1017,7 @@ body {
 }
 /* ---customer-support--- */
 .customer-support {
-  padding: 20px;
-}
-.customer-support__content {
+  margin: 20px;
   background: url(/img/customer-support/customer-support-background.png);
   -o-object-fit: contain;
   object-fit: contain;
@@ -1145,9 +1118,7 @@ p.customer-support__info {
 }
 /* ---faq--- */
 .faq {
-  padding: 20px;
-}
-.faq__content {
+  margin: 20px;
   padding: 30px;
   background-color: var(--background-block);
   border-radius: 6px;
@@ -1219,7 +1190,6 @@ p.customer-support__info {
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
 }
-
 /* ---footer--- */
 .footer {
   padding: 20px;
@@ -1289,21 +1259,15 @@ p.customer-support__info {
 /* ---bonus-banner-app--- */
 .banner-app,
 .banner-bonus {
-  padding: 20px;
-}
-.banner-bonus__content,
-.banner-app__content {
+  margin: 20px;
   background: url(/img/section_banner/section-banner_player.png);
   border-radius: 6px;
   -o-object-fit: contain;
   object-fit: contain;
-  width: 100%;
+  height: 384px;
   background-size: cover;
   background-position: center;
-}
-.banner-bonus__info,
-.banner-app__info {
-  padding: 40px 20px;
+  padding: 15px 20px;
 }
 .banner-bonus__link,
 .banner-app__link {
@@ -1372,9 +1336,7 @@ p.customer-support__info {
 }
 /* ---welcome--- */
 .welcome {
-  padding: 20px;
-}
-.welcome__content {
+  margin: 20px;
   padding: 32px 20px;
   background-color: var(--background-block);
   border-radius: 6px;
@@ -1399,7 +1361,7 @@ p.customer-support__info {
 }
 /* ---info-bonuses--- */
 .info-bonuses {
-  padding: 20px;
+  margin: 20px;
 }
 .info-bonuses__item {
   background-color: var(--background-block);
@@ -1483,9 +1445,7 @@ p.customer-support__info {
 }
 /* ---download--- */
 .download {
-  padding: 20px;
-}
-.download__content {
+  margin: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
